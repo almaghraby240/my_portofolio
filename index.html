@@ -34,7 +34,6 @@
     .nav-links a { font-weight: 600; color: #334155; }
     .nav-links a:hover { color: #2563eb; }
 
-    /* Hero Section */
     .hero {
       text-align: center;
       padding: 6rem 1rem;
@@ -55,11 +54,9 @@
     .btn-secondary { border: 2px solid white; color: white; }
     .btn-secondary:hover { background: white; color: #2563eb; }
 
-    /* Section titles */
     section { padding: 5rem 1rem; }
     h2.section-title { text-align: center; font-size: 2rem; font-weight: 800; margin-bottom: 2rem; color: #1e293b; }
 
-    /* Profile Section */
     .profile { background: white; }
     .profile-content { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
     .profile-text p { margin-bottom: 1rem; color: #475569; }
@@ -70,24 +67,20 @@
       border: 6px solid #e0e7ff;
     }
 
-    /* Skills */
     .skills-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap: 1.5rem; }
     .skill-card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
     .skill-card h3 { color: #2563eb; margin-bottom: 0.5rem; }
 
-    /* Projects */
     .projects-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(320px,1fr)); gap: 1.5rem; }
     .project-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
     .project-card img { width: 100%; height: 200px; object-fit: cover; }
     .project-content { padding: 1rem; }
     .project-content h3 { color: #2563eb; margin-bottom: 0.5rem; }
 
-    /* Resume Section */
     .resume { background: #f1f5f9; text-align: center; }
     .resume p { margin-bottom: 1rem; }
     .resume a { display: inline-block; }
 
-    /* Contact */
     .contact { background: white; text-align: center; }
     .contact p { margin-bottom: 1rem; color: #475569; }
     .contact-buttons { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; margin-top: 1rem; }
@@ -95,6 +88,26 @@
     .linkedin { background: #2563eb; color: white; }
     .github { background: #1f2937; color: white; }
     .email { background: #10b981; color: white; }
+
+    .freelance-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .freelance-links a {
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      background: #f1f5f9;
+      border: 1px solid #e5e7eb;
+      transition: background 0.3s;
+    }
+    .freelance-links a:hover {
+      background: #e0e7ff;
+      color: #2563eb;
+    }
 
     footer { background: #1e293b; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
 
@@ -113,6 +126,7 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#resume">Resume</a></li>
+        <li><a href="#proposal">Proposal</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -135,9 +149,7 @@
         <p>Passionate about data storytelling, I specialize in sales, finance, and customer analytics, delivering measurable results for clients.</p>
       </div>
       <div class="profile-image">
-        <!-- ✅ Your Google Drive profile photo -->
-        <img src="ChatGPT Image Sep 2, 2025, 06_58_38 PM.png" 
-             alt="Profile Photo of Youssef Almaghraby">
+        <img src="ChatGPT Image Sep 2, 2025, 06_58_38 PM.png" alt="Profile Photo of Youssef Almaghraby">
       </div>
     </div>
   </section>
@@ -187,14 +199,27 @@
     </div>
   </section>
 
+  <section id="proposal" class="resume">
+    <div class="container">
+      <h2 class="section-title">Technical & Financial Proposal</h2>
+      <p>Download my detailed technical and financial proposal prepared for clients.</p>
+      <a href="Technical_Financial_Proposal.pdf" class="btn btn-primary" download>Download Proposal (PDF)</a>
+    </div>
+  </section>
+
   <section id="contact" class="contact">
     <div class="container">
       <h2 class="section-title">Contact</h2>
-      <p>Let’s connect! Reach me via email, LinkedIn, or GitHub.</p>
+      <p>Let’s connect! Reach me via email, LinkedIn, GitHub, or freelancing platforms.</p>
       <div class="contact-buttons">
         <a href="mailto:yosef.almaghraby240@gmail.com" class="email">Email</a>
         <a href="https://www.linkedin.com/in/yosef-almaghraby-118987218/" class="linkedin" target="_blank">LinkedIn</a>
         <a href="https://github.com/almaghraby240" class="github" target="_blank">GitHub</a>
+      </div>
+      <div class="freelance-links">
+        <a href="https://www.upwork.com/freelancers/~014c2f002e4b5de549" target="_blank">Upwork</a>
+        <a href="https://www.freelancer.com/u/yosefalmaghraby8" target="_blank">Freelancer</a>
+        <a href="https://mostaql.com/u/yousef_Almghrby" target="_blank">مستقل</a>
       </div>
     </div>
   </section>
